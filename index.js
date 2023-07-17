@@ -79,30 +79,27 @@ if (value1 >= 5 && value2 >= 5) {
 // Using if/else statements and strict equality operators, JavaScript code in a script tag that compares two sets of two values. Print true if at least one of the pairs is truthy.
 
 //Pair and Compare Pseudocode Solution:
-//Pair and Compare Psuedocode Solution:
 //if pair 1 is truthy && pair 2 is truthy, print true 
 //if pair 1 is truthy && pair 2 is falsy, print true
 //if pair 1 is falsy && pair 2 is truthy, print true
 //if pair 1 is falsy && pair 2 is falsy, print false
 
 
-const pair1Value1 = 5;
+const pair1Value1 = 4;
 const pair1Value2 = 5;
 
 //Param2
 const pair2Value1 = "Hi";
 const pair2Value2 = "Hello";
 
-let isTruthy = false;
+let isTruthy = true;
 
 if (pair1Value1 === pair1Value2 && pair2Value1 === pair2Value2) {
-  isTruthy = true;
+    console.log(true);
 } else if (pair1Value1 !== pair1Value2 && pair2Value1 === pair2Value2) {
-  isTruthy = true;
+    console.log(true);
 } else if (pair1Value1 === pair1Value2 && pair2Value1 !== pair2Value2) {
-  isTruthy = true;
+    console.log(true);
 } else if (pair1Value1 !== pair1Value2 && pair2Value1 !== pair2Value2) {
-  isTruthy = false;
+    console.log(false);
 }
-
-console.log(isTruthy);
